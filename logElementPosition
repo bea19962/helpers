@@ -1,0 +1,18 @@
+function logElementPosition(elementRef) {
+  if (elementRef && elementRef.value) {
+    const rect = elementRef.value.getBoundingClientRect()
+    console.log('Element position:', rect)
+    console.log(
+      'Top:',
+      rect.top,
+      'Right:',
+      rect.right,
+      'Bottom:',
+      rect.bottom,
+      'Left:',
+      rect.left,
+    )
+  } else {
+    console.log('Element or ref not found')
+  }
+}
